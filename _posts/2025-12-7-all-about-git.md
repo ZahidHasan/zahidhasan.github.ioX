@@ -74,10 +74,12 @@ Key characteristics of a local VCS:
 - **Limited collaboration**: Sharing and merging changes with other users typically requires manual synchronization or external mechanisms, which can be cumbersome.
 - **Single point of failure**: The entire version history is at risk if the local machine or its storage media fails, unless manual backups are consistently maintained.
   
- 
-  <img scr="/assets/img/local-vcs.png" width="300px">
 
-
+<figure>
+    <img src="/assets/img/local-vcs.png" width="300px"
+         alt="Albuquerque, New Mexico">
+    <figcaption>Local Version Control System</figcaption>
+</figure>
 
 ## Centralized Version Control Systems (CVCS)
 
