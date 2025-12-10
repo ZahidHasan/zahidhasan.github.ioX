@@ -10,7 +10,6 @@ author: Zahid Hasan
 
 <div class="toc-wrapper">
 <h2>Table of Contents</h2>
-
 * TOC
 {:toc}
 
