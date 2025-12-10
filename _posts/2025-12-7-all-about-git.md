@@ -2,7 +2,7 @@
 title: All about Git
 tags: [git, version control system, github]
 author: Zahid Hasan
-cover-img: "/vcs-git-github.jpg"
+cover-img: "assets/img/vcs-git-github.jpg"
 comments: True
 gh-repo: "https://github.com/ZahidHasan/zahidhasan.github.io"
 gh-badge: ![GitHub repo size](https://img.shields.io/github/repo-size/:user/:repo)
