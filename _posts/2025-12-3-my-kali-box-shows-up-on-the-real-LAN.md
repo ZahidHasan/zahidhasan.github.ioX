@@ -59,8 +59,10 @@ Note that: Bridging requires enabling the full Hyper‑V role and creating an Ex
 
 ## 4️⃣ Step‑by‑Step: Create an External Switch & Tell WSL to Use It
 
-> [!CAUTION] 
-> Run all commands in **Windows PowerShell (Admin)**.
+ {: .box-warning}
+**Warning:** Run all commands in Windows PowerShell (Admin).
+
+
 
 ### 4.1 Create/verify external Hyper‑V switch
 
@@ -77,6 +79,7 @@ if (-not (Get-VMSwitch -Name $SwitchName -ErrorAction SilentlyContinue)) {
 }
 ```
 
+
 ### 4.2 Write global `.wslconfig`
 
 ```sql
@@ -88,12 +91,14 @@ vmSwitch = $SwitchName
 "@ | Set-Content -Path $cfgPath -Encoding UTF8
 ```
 
+
 ### 4.3 Shut down WSL
 
 ```batch
 wsl --shutdown
 Get-Process vmmem -ErrorAction SilentlyContinue | Stop-Process -Force
 ```
+
 
 ### 4.4 Start distro fresh
 
@@ -102,6 +107,7 @@ wsl -d kali-linux
 ```
 
 ---
+
 
 ## 5️⃣ Validate – Is Your VM Actually on the LAN?
 
@@ -117,6 +123,7 @@ sudo apt update
 
 ---
 
+
 ## 6️⃣ Troubleshooting – The “It Still Shows 172.28.x.x” Checklist
 
 1. External switch bound → `Get-VMSwitch -Name ExternalWSL`
@@ -128,6 +135,7 @@ sudo apt update
 7. Group Policy removing file → check after logon.
 
 ---
+
 
 ## 7️⃣ Optional Extras – Making the Bridged VM Even More Useful
 
@@ -142,6 +150,7 @@ sudo apt update
 
 ---
 
+
 ## 8️⃣ How to Switch Back to Default NAT
 
 ```batch
@@ -151,6 +160,7 @@ wsl -d kali-linux
 ```
 
 ---
+
 
 ## 9️⃣ Wrap‑Up & Quick Reference Cheat‑Sheet
 
