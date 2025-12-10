@@ -20,7 +20,7 @@ author: Zahid Hasan
 ###############################################
 
 navbar-links:
-  Blog" : "/"
+  Blog : "/"
   About Me: "aboutme"
   Archive: "tags"
   Github: "github.com/zahidhasan"
