@@ -1,0 +1,55 @@
+.toc-wrapper {
+  position: fixed;
+  top: 100px; /* Adjust based on your header height */
+  right: 20px;
+  width: 250px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.toc-wrapper h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 8px;
+}
+
+/* TOC Links */
+#markdown-toc {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#markdown-toc li {
+  margin: 8px 0;
+}
+
+#markdown-toc a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#markdown-toc a:hover {
+  color: #007bff;
+}
+
+/* Nested items */
+#markdown-toc ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+/* Hide on mobile */
+@media (max-width: 1200px) {
+  .toc-wrapper {
+    display: none;
+  }
+}
