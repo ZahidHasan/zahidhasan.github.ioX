@@ -7,7 +7,8 @@ author: Zahid Hasan
 
 
 # 🎯 Finally Linux inside WSL2 sees the Internet.
-
+* TOC
+{:toc}
 ---
 
 ## 1️⃣ Why the Default WSL 2 Network Is “Stubborn”
