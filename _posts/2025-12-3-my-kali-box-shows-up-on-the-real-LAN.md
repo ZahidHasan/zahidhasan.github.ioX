@@ -6,15 +6,7 @@ author: Zahid Hasan
 ---
 
 
-# 🎯 Finally Linux inside WSL2 sees the Internet.
-
-<div class="toc-wrapper">
-<h2>Table of Contents</h2>
-
-* TOC
-* {:toc}
-
-</div>
+## 🎯 Finally Linux inside WSL2 sees the Internet.
 
 ---
 
